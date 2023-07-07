@@ -1,12 +1,17 @@
 package com.uruom.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class EncodingController {
-    @RequestMapping
-    public String test1(){
+    @PostMapping("/e/t1")
+    public String test1(String name, Model model){
+//        过滤器解决乱码
+        System.out.println(name);
+        model.addAttribute("msg", name);
         return "test";
     }
 }
