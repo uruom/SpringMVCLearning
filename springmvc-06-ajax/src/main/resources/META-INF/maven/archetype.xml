@@ -1,5 +1,5 @@
 <archetype>
-  <id>springmvc-05-json</id>
+  <id>springmvc-06-ajax</id>
   <sources>
     <source>src/main/java/App.java</source>
   </sources>
